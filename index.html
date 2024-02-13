@@ -56,6 +56,8 @@
                         <div>
                             <p class="text-xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
+
+                        <!-- Calculation Button -->
                         <div class="card-actions justify-center">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -88,22 +90,41 @@
                             <p class="text-xl">Area: <span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
                         </div>
 
+                        <!-- Calculation Button -->
                         <div class="card-actions justify-center">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-
-
                 <!-- Parallelogram -->
                 <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area = b x h</p>
+
+                        <div class="flex gap-1 justify-center items-center">
+                            <!-- base input -->
+                            <input id="parallelogram-base" class="w-20  p-2 rounded-sm bg-gray-200" type="text"
+                                placeholder="b">
+                            <span>cm</span>
+
+                            <!-- height input -->
+                            <input id="parallelogram-height" class="w-20  p-2 rounded-sm bg-gray-200" type="text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+
+                        <!-- Area Calculation -->
+                        <div>
+                            <p class="text-xl">Area: <span id="parallelogram-area">0</span><span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
+
+                        <!-- Calculation Button -->
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -155,6 +176,7 @@
 
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/parallelogram.js"></script>
     <script></script>
 </body>
 

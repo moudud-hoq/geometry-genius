@@ -124,22 +124,44 @@
 
                         <!-- Calculation Button -->
                         <div class="card-actions justify-end">
-                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Rombus -->
+                <!-- Rhombus -->
                 <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
-                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="images/rhombus.png" alt="Rhombus" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area = 0.5 X d1 X d2</p>
+
+                        <div class="flex gap-1 justify-center items-center">
+                            <!-- d1 input -->
+                            <input id="rhombus-d1" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                            <span>cm</span>
+
+                            <!-- d2 input -->
+                            <input id="rhombus-d2" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                            <span>cm</span>
                         </div>
+
+                        <!-- Area calculation -->
+                        <div>
+                            <p class="text-xl">Area: <span id="rhombus-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+
+                        <!-- Calculation Button -->
+                        <div class="card-actions justify-center">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+
                     </div>
                 </div>
+
+
+
 
                 <!-- Pentagon -->
                 <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
@@ -177,6 +199,7 @@
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/rhombus.js"></script>
     <script></script>
 </body>
 

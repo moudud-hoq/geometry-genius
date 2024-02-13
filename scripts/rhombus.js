@@ -9,6 +9,7 @@ function calculateRhombusArea() {
 
 //Call above function as wish not hardcode
 function getInputValueById(inputFieldId) {
+    /*প্রথমে, ফাংশনটি inputFieldId নামক HTML এলিমেন্টের ID অনুসারে এলিমেন্টটি সনাক্ত করে। */
     const inputField = document.getElementById(inputFieldId);
     const inputValueText = inputField.value;
     const inputValue = parseFloat(inputValueText);

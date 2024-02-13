@@ -26,13 +26,13 @@
     <main class="container mx-auto">
 
         <!-- Main Content Container -->
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row gap-5">
 
             <!-- shape card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
                 <!-- Triangle -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
                     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
 
                     <!-- Card Body -->
@@ -65,7 +65,7 @@
                 </div>
 
                 <!-- Rectangle -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
                     <figure><img src="images/rectangle.png" alt="Rectangle" /></figure>
 
                     <!-- Card Body -->
@@ -98,7 +98,7 @@
                 </div>
 
                 <!-- Parallelogram -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Rhombus -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
                     <figure><img src="images/rhombus.png" alt="Rhombus" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Rhombus</h2>
@@ -160,37 +160,70 @@
                     </div>
                 </div>
 
-
-
-
                 <!-- Pentagon -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
-                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
+                    <figure><img src="images/pentagon.png" alt="Rhombus" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area = 0.5 x p x b</p>
+
+                        <div class="flex gap-1 justify-center items-center">
+                            <!-- d1 input -->
+                            <input id="pentagon-p" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                            <span>cm</span>
+
+                            <!-- d2 input -->
+                            <input id="pentagon-b" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                            <span>cm</span>
                         </div>
+
+                        <!-- Area calculation -->
+                        <div>
+                            <p class="text-xl">Area: <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+
+                        <!-- Calculation Button -->
+                        <div class="card-actions justify-center">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Ellipse -->
-                <div class="card bg-base-100 shadow-xl border-2 border-gray-400">
-                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card bg-base-100 shadow-xl border-2 border-gray-400 p-6">
+                    <figure><img src="images/ellipse.png" alt="Ellipse" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area = π x a x b</p>
+
+                        <div class="flex gap-1 justify-center items-center">
+                            <!-- d1 input -->
+                            <input id="ellipse-a" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="b">
+                            <span>cm</span>
+
+                            <!-- d2 input -->
+                            <input id="ellipse-b" class="w-20  p-2 rounded-sm bg-gray-200" type="text" placeholder="h">
+                            <span>cm</span>
                         </div>
+
+                        <!-- Area calculation -->
+                        <div>
+                            <p class="text-xl">Area: <span id="ellipse-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+
+                        <!-- Calculation Button -->
+                        <div class="card-actions justify-center">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
 
             <!-- Area calculation container -->
-            <div class="w-96 border-2 border-gray-500 text-center">
+            <div class="w-96 border-2 border-gray-500 text-center rounded-xl py-6">
                 <h3 class="text-3xl">Area Calculation</h3>
             </div>
         </div>
